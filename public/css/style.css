@@ -3,3 +3,18 @@ body {
     background: linear-gradient(135deg, #e3f2fd, #bbdefb);
     font-family: 'Segoe UI', sans-serif;
 }
+/* Botones */
+button {
+    height: 80px;
+    width: 80px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+/* Centrado de la tabla */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px; /* separa un poco los botones */
+}
