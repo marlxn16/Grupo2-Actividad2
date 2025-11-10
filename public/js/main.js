@@ -51,3 +51,37 @@ clrBtn.addEventListener("click", function(){
 delBtn.addEventListener("click", function(){
     res.textContent = res.textContent.substring(0, res.textContent.length - 1);
 });
+
+
+var eqBtn = document.getElementById("Igual");
+
+// Manejador del Boton Igual
+eqBtn.addEventListener("click", function(){
+    var symList = [];
+    
+    // Recorre la lista de operadores y verifica si estan presentes en la expresion
+    for(var i=0; i<opnSyms.length; i++){
+        if(res.textContent.indexOf(opnSyms[i]) > -1){
+            symList.push(opnSyms[i]);
+        }
+    }
+
+    // Si existen operadores en la expresion, procede con la evaluacion
+    if(symList.length > 0){
+        try{
+
+			// Evalua la expresión matematica ingresada
+            var total = eval(res.textContent);
+            
+            // Muestra el resultado en el elemento HTML correspondiente
+			resultado_final.innerHTML = "<p> = " + total + "</p>";
+            // Limpia el área de entrada después del cálculo
+			res.textContent = "";
+        }
+        catch(e){
+            // Captura errores de sintaxis y muestra un mensaje al usuario
+            resultado_final.innerHTML = "<p>Sintaxis Invalida</p>";
+            res.textContent = "";
+        }
+    }
+});
