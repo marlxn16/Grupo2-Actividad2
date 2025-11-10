@@ -1,5 +1,6 @@
 UNIVERSIDAD DE LAS FUERZAS ARMADAS 'ESPE' 
 
+Grupo#2
 
 Este proyecto consiste en una calculadora web funcional, desarrollada con HTML, CSS, JavaScript y Bootstrap 5, como parte de la práctica de aprendizaje del Grupo 2.
 El objetivo fue integrar el uso de componentes de Bootstrap, el manejo del DOM con JavaScript, y el diseño responsive para lograr una interfaz moderna, limpia y funcional.
