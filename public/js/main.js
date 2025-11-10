@@ -28,3 +28,11 @@ for(var i=0; i<=3; i++){
 		});
   	}(i));
 }
+
+var decPoint = document.getElementById("Punto");
+
+// Funcionalidad del punto decimal, agrega un punto decimal 
+// al contenido de la pantalla de resultados==res
+decPoint.addEventListener("click", function(){
+	res.textContent += ".";
+})
