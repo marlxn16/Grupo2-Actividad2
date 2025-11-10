@@ -13,3 +13,18 @@ for(var i=0; i<=9; i++){
 		});
   	}(i));
 }
+
+//Aqui se configuran como van a funcionar 
+//los botones de operaciones como el +, -, *
+var opns = [];
+var opnSyms = ["+", "-", "*", "/"];
+//funcionalidad de los operadores matematicos
+for(var i=0; i<=3; i++){
+	(function(i){
+    	var qs = "op" + i;
+		opns.push(document.getElementById(qs));
+		opns[i].addEventListener("click", function(){
+			res.textContent += opnSyms[i];
+		});
+  	}(i));
+}
