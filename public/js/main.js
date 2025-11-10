@@ -36,3 +36,18 @@ var decPoint = document.getElementById("Punto");
 decPoint.addEventListener("click", function(){
 	res.textContent += ".";
 })
+
+var clrBtn = document.getElementById("Limpiar");
+var delBtn = document.getElementById("Borrar");
+var resultado_final = document.getElementById("Resultado_Final");
+
+//Resetea el estado completo de la interfaz, limpiando la pantalla res.textContent=""
+clrBtn.addEventListener("click", function(){
+    res.textContent = "";
+    resultado_final.innerHTML = "";
+});
+//Permite correccion manipulando la cadena de texto usando 'substring'
+// Elimina el ultimo caracter de la entrada
+delBtn.addEventListener("click", function(){
+    res.textContent = res.textContent.substring(0, res.textContent.length - 1);
+});
